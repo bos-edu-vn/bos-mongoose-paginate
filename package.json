@@ -1,0 +1,46 @@
+{
+  "name": "bos-mongoose-paginate",
+  "description": "Folk mongoose-paginate Pagination plugin for Mongoose upgrade for mongo 4.0+",
+  "version": "1.0.0",
+  "author": "bos-edu-vn",
+  "contributors": [
+    "Edward Hotchkiss <edward@edwardhotchkiss.com>",
+    "Nick Baugh <niftylettuce@gmail.com>",
+    "Dmitry Kirilyuk <gk.joker@gmail.com>",
+    "bos-edu-vn <bos.edu.vn@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bos-edu-vn/bos-mongoose-paginate.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "mongoose",
+    "paginate",
+    "pagination",
+    "paging",
+    "page"
+  ],
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2"
+  },
+  "devDependencies": {
+    "chai": "4.3.4",
+    "mocha": "9.1.0",
+    "mongoose": "6.0.1"
+  },
+  "scripts": {
+    "test": "mocha tests/*.js -R spec --ui bdd --timeout 5000"
+  },
+  "bugs": {
+    "url": "https://github.com/bos-edu-vn/bos-mongoose-paginate/issues"
+  },
+  "homepage": "https://github.com/bos-edu-vn/bos-mongoose-paginate#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  }
+}
