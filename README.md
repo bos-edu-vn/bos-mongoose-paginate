@@ -1,18 +1,18 @@
 
-# mongoose-paginate-plus
+# bos-mongoose-paginate
 
 > Pagination plugin for [Mongoose](http://mongoosejs.com) (Support mongo >= 4.0)
 
-[![NPM version](https://img.shields.io/npm/v/mongoose-paginate-plus.svg)](https://npmjs.org/package/mongoose-paginate-plus)
+[![NPM version](https://img.shields.io/npm/v/bos-mongoose-paginate.svg)](https://npmjs.org/package/bos-mongoose-paginate)
 
 **Note:** This plugin will only work with Node.js >= 4.2 and Mongoose >= 4.2
 =======
-[![NPM](https://nodei.co/npm/mongoose-paginate-plus.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/mongoose-paginate-plus/)
+[![NPM](https://nodei.co/npm/bos-mongoose-paginate.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/bos-mongoose-paginate/)
 
 ## Installation
 
 ```sh
-npm install mongoose-paginate-plus
+npm install bos-mongoose-paginate
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ Add plugin to a schema and then use model `paginate` method:
 
 ```js
 var mongoose = require('mongoose');
-var mongoosePaginate = require('mongoose-paginate-plus');
+var mongoosePaginate = require('bos-mongoose-paginate');
 
 var schema = new mongoose.Schema({ /* schema definition */ });
 schema.plugin(mongoosePaginate);
@@ -126,7 +126,7 @@ Model.paginate({}, { offset: 100, limit: 0 }).then(function(result) {
 config.js:
 
 ```js
-var mongoosePaginate = require('mongoose-paginate-plus');
+var mongoosePaginate = require('bos-mongoose-paginate');
 
 mongoosePaginate.paginate.options = {
   lean:  true,
